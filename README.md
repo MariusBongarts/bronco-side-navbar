@@ -15,7 +15,7 @@
 ## ➤ Installation
 
 ```
-$ npm i https://github.com/marius2502/@marius/broncosidenavbar.git
+$ npm i https://github.com/marius2502/bronco-side-navbar.git
 ```
 
 ```javascript

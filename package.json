@@ -1,7 +1,7 @@
 {
   "name": "@marius/broncosidenavbar",
   "version": "1.0.0",
-  "identifier": "broncosidenavbar",
+  "identifier": "bronco-side-navbar",
   "description": "Modern left navbar built with Lit-Element",
   "private": true,
   "main": "index.js",
