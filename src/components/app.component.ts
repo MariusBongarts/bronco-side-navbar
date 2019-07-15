@@ -12,7 +12,7 @@ const componentCSS = require('./app.component.scss');
  * @cssprop --padding-top - Defines where navItems should begin
  * @cssprop --primary-color - Change primary color easily
  * @cssprop --sidebar-min-height - Sidebar min height. Default: 20%
- * @cssprop --sidebar-width - Sidebar width. Default: 20%;
+ * @cssprop --sidebar-width - Sidebar width. Default: 100%;
  */
 @customElement('bronco-side-navbar')
 export class BroncoSideNavbar extends LitElement {
@@ -77,9 +77,6 @@ export class BroncoSideNavbar extends LitElement {
         };
       };
 
-      // this.dragBtn.addEventListener('mouseup', (e: MouseEvent) => {
-      //   this.dragBtn.removeEventListener('mousemove', this.changeSizeOfSidebar, true);
-      // });
     });
   }
 
@@ -108,8 +105,7 @@ export class BroncoSideNavbar extends LitElement {
           <i class="material-icons">drag_handle</i>
         </div>
         ${this.navItems.map((navItem) => html`
-        <li @click=${() => this.selectedItem = navItem} class="${this.selectedItem === navItem ? 'selected' : ''}">
-          <i class="material-icons">home</i>
+        <li @click=${() => this.emit(navItem)} class="${this.selectedItem === navItem ? 'selected' : ''}">
           ${ navItem}
         </li>
         `)}
