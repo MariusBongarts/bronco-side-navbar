@@ -14,6 +14,7 @@ $ npm i https://github.com/marius2502/{{ pkg.name }}.git
 
 ```javascript
 import '@marius/{{ pkg.identifier }}/dist/main';
+```
 
 {{ doc:src/components/app.component.ts }}
 

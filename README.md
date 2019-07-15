@@ -20,6 +20,7 @@ $ npm i https://github.com/marius2502/@marius/broncosidenavbar.git
 
 ```javascript
 import '@marius/broncosidenavbar/dist/main';
+```
 
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#bronco-side-navbar)
