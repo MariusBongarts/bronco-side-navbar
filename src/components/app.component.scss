@@ -1,0 +1,90 @@
+@import './../icons.scss';
+
+:host {
+  --bg-color: white;
+  --bg-color-hover: rgba(233, 233, 233, 0.13);
+  --bg-color-icon-hover: black;
+  --color: grey;
+  --padding-top: 10vh;
+  --primary-color: rgb(29, 202, 255);
+  --sidebar-width: 20%;
+  --sidebar-min-height: 100vh;
+}
+
+
+
+
+.selected {
+  color: var(--primary-color);
+}
+
+ul {
+  position: fixed;
+  border: 1px solid rgba(128, 128, 128, 0.322);
+  margin: 0;
+  min-height: var(--sidebar-min-height);
+  padding: 0;
+  padding-top: var(--padding-top);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: left;
+
+}
+
+
+li {
+  background-color: var(--bg-color);
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+  color: var(--color);
+  font-size: 1.2em;
+  padding: 15px 20px;
+  padding-left: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  overflow: hidden;
+
+}
+
+li i {
+  padding-right: 20px;
+}
+
+li:hover {
+  background-color: var(--bg-color-hover);
+}
+
+
+li:hover i {
+  color: var(--bg-color-icon-hover);
+  transform: scale(1.05);
+}
+
+.selected {
+  color: var(--primary-color);
+}
+#drag {
+  transform: rotate(90deg);
+  position: absolute;
+  right: -24px;
+  top: 40vh;
+  z-index: 9999;
+  cursor: pointer;
+  user-select: none;
+}
+
+#drag i {
+  font-size: 50px;  /* Preferred icon size */
+  color:var(--color);
+}
+
+#drag i:hover {
+  font-size: 50px;  /* Preferred icon size */
+  color: black;
+}
