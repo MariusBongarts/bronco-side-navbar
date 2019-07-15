@@ -102,9 +102,6 @@ export class BroncoSideNavbar extends LitElement {
       ${this.mobile && this.hideOnMobile ? ''
        : html`
       <ul>
-        <div id="drag">
-          <i class="material-icons">drag_handle</i>
-        </div>
         ${this.navItems.map((navItem) => html`
         <li @click=${() => this.emit(navItem)} class="${this.selectedItem === navItem ? 'selected' : ''}">
           ${ navItem}
