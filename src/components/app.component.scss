@@ -1,13 +1,14 @@
 @import './../icons.scss';
 
 :host {
-  --bg-color: white;
+  --bg-color: none;
   --bg-color-hover: rgba(233, 233, 233, 0.13);
   --bg-color-icon-hover: black;
   --color: grey;
   --padding-top: 10vh;
+  --position: fixed;
   --primary-color: rgb(29, 202, 255);
-  --sidebar-width: 100%;
+  --sidebar-width: inherit;
   --sidebar-min-height: 100vh;
 }
 
@@ -19,7 +20,7 @@
 }
 
 ul {
-  position: fixed;
+  position: var(--position);
   border: 1px solid rgba(128, 128, 128, 0.322);
   margin: 0;
   min-height: var(--sidebar-min-height);
@@ -29,6 +30,7 @@ ul {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: left;
+  width: var(--sidebar-width);
 
 }
 

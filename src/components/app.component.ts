@@ -10,8 +10,9 @@ const componentCSS = require('./app.component.scss');
  * @cssprop --bg-color-icon-hover - Hover color of icon
  * @cssprop --color - Font color
  * @cssprop --padding-top - Defines where navItems should begin
+ * @cssprop --position - Position of ul
  * @cssprop --primary-color - Change primary color easily
- * @cssprop --sidebar-min-height - Sidebar min height. Default: 20%
+ * @cssprop --sidebar-min-height - Sidebar min height. Default: inherit
  * @cssprop --sidebar-width - Sidebar width. Default: 100%;
  */
 @customElement('bronco-side-navbar')

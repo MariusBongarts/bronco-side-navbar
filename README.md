@@ -48,16 +48,17 @@ Left sidebar. To include icons following has to be included in index.html  => <l
 
 ### CSS Custom Properties
 
-| Property                | Description                         |
-|-------------------------|-------------------------------------|
-| `--bg-color`            | Background color of navitem         |
-| `--bg-color-hover`      | Hover background color of navItem   |
-| `--bg-color-icon-hover` | Hover color of icon                 |
-| `--color`               | Font color                          |
-| `--padding-top`         | Defines where navItems should begin |
-| `--primary-color`       | Change primary color easily         |
-| `--sidebar-min-height`  | Sidebar min height. Default: 20%    |
-| `--sidebar-width`       | Sidebar width. Default: 100%;       |
+| Property                | Description                          |
+|-------------------------|--------------------------------------|
+| `--bg-color`            | Background color of navitem          |
+| `--bg-color-hover`      | Hover background color of navItem    |
+| `--bg-color-icon-hover` | Hover color of icon                  |
+| `--color`               | Font color                           |
+| `--padding-top`         | Defines where navItems should begin  |
+| `--position`            | Position of ul                       |
+| `--primary-color`       | Change primary color easily          |
+| `--sidebar-min-height`  | Sidebar min height. Default: inherit |
+| `--sidebar-width`       | Sidebar width. Default: 100%;        |
 
 
 
