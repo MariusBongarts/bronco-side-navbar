@@ -64,20 +64,20 @@ export class BroncoSideNavbar extends LitElement {
       if (window.innerWidth >= 928) this.mobile = false;
     });
 
-    this.dragBtn.addEventListener('mousedown', (e: MouseEvent) => {
+    // this.dragBtn.addEventListener('mousedown', (e: MouseEvent) => {
 
-      // this.dragBtn.addEventListener('mousemove', this.changeSizeOfSidebar , true);
-      this.dragBtn.onmousemove = (e: MouseEvent) => {
-        this.changeSizeOfSidebar(e);
-      };
+    //   // this.dragBtn.addEventListener('mousemove', this.changeSizeOfSidebar , true);
+    //   this.dragBtn.onmousemove = (e: MouseEvent) => {
+    //     this.changeSizeOfSidebar(e);
+    //   };
 
-      window.onmouseup = () => {
-        this.dragBtn.onmousemove = () => {
-          // Removes the event handler
-        };
-      };
+    //   window.onmouseup = () => {
+    //     this.dragBtn.onmousemove = () => {
+    //       // Removes the event handler
+    //     };
+    //   };
 
-    });
+    // });
   }
 
   changeSizeOfSidebar(e: MouseEvent) {

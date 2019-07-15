@@ -57,7 +57,7 @@ Left sidebar. To include icons following has to be included in index.html  => <l
 | `--padding-top`         | Defines where navItems should begin |
 | `--primary-color`       | Change primary color easily         |
 | `--sidebar-min-height`  | Sidebar min height. Default: 20%    |
-| `--sidebar-width`       | Sidebar width. Default: 20%;        |
+| `--sidebar-width`       | Sidebar width. Default: 100%;       |
 
 
 
