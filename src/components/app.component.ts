@@ -101,13 +101,13 @@ export class BroncoSideNavbar extends LitElement {
       <!-- Navbar is not visible on mobile devices -->
       ${this.mobile && this.hideOnMobile ? ''
        : html`
-      <ul>
-        ${this.navItems.map((navItem) => html`
-        <li @click=${() => this.emit(navItem)} class="${this.selectedItem === navItem ? 'selected' : ''}">
-          ${ navItem}
-        </li>
-        `)}
-      </ul>
+        <ul>
+          ${this.navItems.map((navItem) => html`
+          <li @click=${()=> this.emit(navItem)} class="${this.selectedItem === navItem ? 'selected' : ''}">
+            ${ navItem}
+          </li>
+          `)}
+        </ul>
       `}
 
     `;

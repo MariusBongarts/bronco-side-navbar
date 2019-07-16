@@ -4,14 +4,12 @@
   --bg-color-hover: rgba(233, 233, 233, 0.178);
   --bg-color-icon-hover: black;
   --color: grey;
-  --padding-top: 10vh;
+  --padding-top: 5vh;
   --position: relative;
   --primary-color: rgb(29, 202, 255);
   --sidebar-width: inherit;
   --sidebar-min-height: 100vh;
 }
-
-
 
 
 .selected {
@@ -23,7 +21,7 @@ ul {
   position: var(--position);
   box-shadow: 0px 8px 8px rgba(128, 128, 128, 0.322);
   margin: 0;
-  min-height: var(--sidebar-min-height);
+  height: var(--sidebar-min-height);
   padding: 0;
   padding-top: var(--padding-top);
   display: flex;
@@ -31,7 +29,11 @@ ul {
   flex-wrap: nowrap;
   justify-content: left;
   width: var(--sidebar-width);
+  overflow: scroll;
+}
 
+::-webkit-scrollbar {
+  display: none;
 }
 
 
@@ -49,7 +51,6 @@ li {
   flex-wrap: wrap;
   justify-content: left;
   align-items: center;
-  overflow: hidden;
 }
 
 li i {
