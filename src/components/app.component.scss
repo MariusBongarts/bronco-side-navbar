@@ -21,7 +21,7 @@
 ul {
   background-color: var(--bg-color);
   position: var(--position);
-  border-right: 1px solid rgba(128, 128, 128, 0.322);
+  box-shadow: 0px 8px 8px rgba(128, 128, 128, 0.322);
   margin: 0;
   min-height: var(--sidebar-min-height);
   padding: 0;
@@ -40,9 +40,9 @@ li {
   user-select: none;
   list-style: none;
   color: var(--color);
-  font-size: 1.2em;
+  font-size: 1em;
   padding: 15px 20px;
-  padding-left: 40px;
+  padding-left: 20px;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -50,7 +50,6 @@ li {
   justify-content: left;
   align-items: center;
   overflow: hidden;
-
 }
 
 li i {
@@ -62,10 +61,7 @@ li:hover {
 }
 
 
-li:hover i {
-  color: var(--bg-color-icon-hover);
-  transform: scale(1.05);
-}
+
 
 .selected {
   color: var(--primary-color);
